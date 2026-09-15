@@ -30,7 +30,7 @@ body {
   min-height: 100vh;
 
   background: linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.5)), 
-              url('/assets/images/3-316-16-9-aspect-ratio-s-sfw-wallpaper-preview.jpg');
+              url('/assets/images/space.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
