@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran Tech Fest 2026</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <main class="container">
+        <h1>Daftar Tech Fest 2026</h1>
+
+        <form id="daftarForm" novalidate>
+            <input type="hidden" id="editId" />
+
+            <label for="nama">Nama Lengkap</label>
+            <input id="nama" name="nama" type="text" />
+            <small id="namaError" class="input-error"></small>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" />
+            <small id="emailError" class="input-error"></small>
+
+            <label for="kelas">Kelas</label>
+            <select id="kelas" name="kelas">
+                <option value="">Pilih kelas</option>
+                <option value="X">X</option>
+                <option value="XI">XI</option>
+                <option value="XII">XII</option>
+            </select>
+            <small id="kelasError" class="input-error"></small>
+
+            <label for="jurusan">Jurusan</label>
+            <select id="jurusan" name="jurusan">
+                <option value="">Pilih jurusan</option>
+                <option value="Teknik Komputer dan Jaringan">Teknik Komputer dan Jaringan</option>
+                <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
+                <option value="Perfilman">Perfilman</option>
+                <option value="Teknik Jaringan Akses">Teknik Jaringan Akses</option>
+            </select>
+            <small id="jurusanError" class="input-error"></small>
+
+            <label for="kegiatan">Kegiatan</label>
+            <input id="kegiatan" name="kegiatan" type="text" placeholder="Contoh: Lomba desain" />
+            <small id="kegiatanError" class="input-error"></small>
+
+            <label for="status">Status Peserta</label>
+            <select id="status" name="status">
+                <option value="Pending">Pending</option>
+                <option value="Approve">Approve</option>
+                <option value="Reject">Reject</option>
+            </select>
+
+            <div class="checkbox-area">
+                <input id="syarat" name="syarat" type="checkbox" />
+                <label for="syarat">Saya menyetujui Syarat &amp; Ketentuan</label>
+            </div>
+            <small id="syaratError" class="input-error"></small>
+
+            <button id="submitButton" type="submit" disabled>Daftar Sekarang</button>
+        </form>
+
+        <div id="hasil"></div>
+
+
+        <div class="dashboard-btn-wrapper">
+            <a href="./js/dashboard.html">
+                <button type="button" class="btn-dashboard">Tombol Dashboard</button>
+            </a>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
