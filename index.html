@@ -11,8 +11,6 @@
         <h1>Daftar Tech Fest 2026</h1>
 
         <form id="daftarForm" novalidate>
-            <input type="hidden" id="editId" />
-
             <label for="nama">Nama Lengkap</label>
             <input id="nama" name="nama" type="text" />
             <small id="namaError" class="input-error"></small>
@@ -35,7 +33,7 @@
                 <option value="">Pilih jurusan</option>
                 <option value="Teknik Komputer dan Jaringan">Teknik Komputer dan Jaringan</option>
                 <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
-                <option value="Perfilman">Perfilman</option>
+                <option value="perfilman">perfilman</option>
                 <option value="Teknik Jaringan Akses">Teknik Jaringan Akses</option>
             </select>
             <small id="jurusanError" class="input-error"></small>
@@ -43,13 +41,6 @@
             <label for="kegiatan">Kegiatan</label>
             <input id="kegiatan" name="kegiatan" type="text" placeholder="Contoh: Lomba desain" />
             <small id="kegiatanError" class="input-error"></small>
-
-            <label for="status">Status Peserta</label>
-            <select id="status" name="status">
-                <option value="Pending">Pending</option>
-                <option value="Approve">Approve</option>
-                <option value="Reject">Reject</option>
-            </select>
 
             <div class="checkbox-area">
                 <input id="syarat" name="syarat" type="checkbox" />
@@ -61,15 +52,9 @@
         </form>
 
         <div id="hasil"></div>
-
-
-        <div class="dashboard-btn-wrapper">
-            <a href="./js/dashboard.html">
-                <button type="button" class="btn-dashboard">Tombol Dashboard</button>
-            </a>
-        </div>
     </main>
 
     <script src="js/script.js"></script>
+
 </body>
 </html>
